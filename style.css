@@ -1,0 +1,77 @@
+body {
+    display: flex;
+}
+
+.boardContainer {
+    border: 3px solid black;
+    background: black;
+    margin: 5px 0 0 5px;
+}
+
+.board td {
+    width: 40px;
+    height: 40px;
+    background-color: green;
+    cursor: pointer;
+}
+
+.board td div {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: auto;
+    transition: 1s background-color;
+}
+
+.board td.black div {
+    background-color: black;
+}
+
+.board td.white div {
+    background-color: white;
+}
+
+.gameContainer{
+    text-align: center;
+}
+
+.gameContainer button {
+    padding: 15px;
+    color: white;
+    background-color: #2f2f2f;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.restartButton button{
+    padding: 15px;
+    color: white;
+    background-color: #2f2f2f;
+    border: none;
+    outline: none;
+    margin: 20px 50px;
+    width: 250px;
+    cursor: pointer;
+}
+
+.gameContainer .score {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.turn {
+    text-align: center;
+    font-size: 28px;
+    padding: 15px 0; 
+    text-transform: uppercase;
+    color: green;
+}
+
+.winner {
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    background-color: #d7d7d7;
+}
